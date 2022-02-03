@@ -6,7 +6,7 @@ let socket;
 const CONNECTION_PORT = "localhost:3002/";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const [room, setRoom] = useState("");
   const [userName, setUserName] = useState("");
 
@@ -15,6 +15,7 @@ function App() {
   }, [CONNECTION_PORT]);
 
   const connectToRoom = () => {
+    setLoggedIn(true);
     socket.emit("join_room", room);
   };
   return (
@@ -40,7 +41,13 @@ function App() {
           <button onClick={connectToRoom}>Enter Chat</button>
         </div>
       ) : (
-        <h1>You Are Logged In</h1>
+        <div className="chatContainer">
+          <div className="messages"></div>
+          <div className="messageInputs">
+            <input type="text" placeholder="Message..." />
+            <button>Send</button>
+          </div>
+        </div>
       )}
     </div>
   );

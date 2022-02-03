@@ -53,3 +53,44 @@ body {
   background-color: #d6eeff;
   color: #3e442b;
 }
+
+.chatContainer {
+  width: 600px;
+  height: 350px;
+  border: 8px solid #8d909b;
+  border-radius: 20px;
+  background-color: #aaadc4;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.chatContainer .messages {
+  flex: 80%;
+  width: 100%;
+}
+
+.chatContainer .messageInputs {
+  flex: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatContainer .messageInputs input {
+  flex: 80%;
+  height: calc(100% -5px);
+  border: none;
+  border-top: 5px solid #8d909b;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.chatContainer .messageInputs button {
+  flex: 20%;
+  height: 100%;
+  background-color: #8d909b;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
