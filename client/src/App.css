@@ -6,15 +6,14 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: #6a7062;
+  background-color: #2a2730;
 }
 
 .logIn {
   width: 600px;
   height: 350px;
-  border: 5px solid #8d909b;
-  border-radius: 20px;
-  background-color: #aaadc4;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +24,7 @@ body {
   margin: 10px;
   width: 200px;
   height: 40px;
-  border: 2px solid #3e442b;
-  border-radius: 20px;
+  border: 2px solid #0091ff;
   background-color: transparent;
   padding-left: 10px;
   color: white;
@@ -41,8 +39,7 @@ body {
   width: 200px;
   height: 50px;
   border: none;
-  border-radius: 20px;
-  background-color: #8d909b;
+  background-color: #0091ff;
   color: white;
   font-size: 16px;
   margin-top: 45px;
@@ -50,24 +47,22 @@ body {
 
 .logIn button:hover {
   cursor: pointer;
-  background-color: #d6eeff;
-  color: #3e442b;
+  background-color: #037edc;
 }
 
 .chatContainer {
   width: 600px;
   height: 350px;
-  border: 8px solid #8d909b;
-  border-radius: 20px;
-  background-color: #aaadc4;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
   display: flex;
-
   flex-direction: column;
 }
 
 .chatContainer .messages {
   flex: 80%;
   width: 100%;
+  padding-left: 20px;
 }
 
 .chatContainer .messageInputs {
@@ -81,7 +76,7 @@ body {
   flex: 80%;
   height: calc(100% -5px);
   border: none;
-  border-top: 5px solid #8d909b;
+  border-top: 5px solid #0091ff;
   padding-left: 20px;
   font-size: 20px;
 }
@@ -89,8 +84,46 @@ body {
 .chatContainer .messageInputs button {
   flex: 20%;
   height: 100%;
-  background-color: #8d909b;
+  background-color: #0091ff;
   border: none;
   color: white;
   font-size: 18px;
+}
+
+.messageContainer {
+  display: flex;
+  width: calc(100% - 30px);
+}
+
+.messageContainer h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+#You {
+  justify-content: flex-start;
+}
+
+#Other {
+  justify-content: flex-end;
+}
+
+#Other .messageIndividual {
+  background-color: #5ff064;
+  color: black;
+}
+.messageIndividual {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #0091ff;
+  opacity: 0.9;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  margin-top: 20px;
 }
