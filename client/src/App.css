@@ -1,19 +1,26 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: url(./assets/pineapple-gda88057a6_1920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
 .App {
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: #2a2730;
 }
 
 .logIn {
-  width: 600px;
-  height: 350px;
-  border: 5px solid #0091ff;
+  width: 300px;
+  height: 400px;
+  border: 8px solid #747572;
   border-radius: 10px;
+  background-color: #ffffff;
+  opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +31,10 @@ body {
   margin: 10px;
   width: 200px;
   height: 40px;
-  border: 2px solid #0091ff;
-  background-color: transparent;
+  border: 2px solid #3d3d3d;
+  background-color: #fafcfc;
   padding-left: 10px;
-  color: white;
+  color: rgb(70, 62, 62);
   font-size: 15px;
 }
 
@@ -35,11 +42,19 @@ body {
   outline: none;
 }
 
+.logIn .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
 .logIn button {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: #0091ff;
+  background-color: #747572;
   color: white;
   font-size: 16px;
   margin-top: 45px;
@@ -47,13 +62,15 @@ body {
 
 .logIn button:hover {
   cursor: pointer;
-  background-color: #037edc;
+  background-color: #a98a9a;
+  color: rgb(70, 62, 62);
 }
 
 .chatContainer {
   width: 600px;
   height: 350px;
   border: 5px solid #0091ff;
+  background-color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
