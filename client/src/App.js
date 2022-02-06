@@ -45,6 +45,9 @@ function App() {
     <div className="App">
       {!loggedIn ? (
         <div className="logIn">
+          <div>
+            <h1>ROOMS</h1>
+          </div>
           <div className="inputs">
             <input
               type="text"
