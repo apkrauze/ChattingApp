@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ScrollToBottom from "react-scroll-to-bottom";
 import "./App.css";
 import io from "socket.io-client";
 
@@ -69,18 +70,20 @@ function App() {
       ) : (
         <div className="chatContainer">
           <div className="messages">
-            {messageList.map((val, key) => {
-              return (
-                <div
-                  className="messageContainer"
-                  id={val.author === userName ? "You" : "Other"}
-                >
-                  <div className="messageIndividual">
-                    {val.author}: {val.message}
+            <ScrollToBottom className="scrollingContainer">
+              {messageList.map((val, key) => {
+                return (
+                  <div
+                    className="messageContainer"
+                    id={val.author === userName ? "You" : "Other"}
+                  >
+                    <div className="messageIndividual">
+                      {val.author}: {val.message}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </ScrollToBottom>
           </div>
 
           <div className="messageInputs">
