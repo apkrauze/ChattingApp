@@ -8,6 +8,7 @@ body {
   background-size: cover;
   background-color: #464646;
 }
+
 .App {
   display: grid;
   place-items: center;
@@ -76,7 +77,8 @@ body {
   width: 300px;
   height: 650px;
   border: 5px solid #747572;
-  background-color: #f4ebbe;
+  background-color: transparent;
+  opacity: 0.9;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -85,7 +87,9 @@ body {
 .chatContainer .messages {
   flex: 80%;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 0px;
+  background-color: white;
+  opacity: 0.5;
 }
 
 .chatContainer .messageInputs {
@@ -96,7 +100,7 @@ body {
 }
 
 .chatContainer .messageInputs input {
-  flex: 80%;
+  flex: 60%;
   height: calc(100% -5px);
   border: none;
   border-top: 5px solid #747572;
@@ -105,7 +109,7 @@ body {
 }
 
 .chatContainer .messageInputs button {
-  flex: 20%;
+  flex: 40%;
   height: 100%;
   background-color: #747572;
   border: none;
@@ -127,6 +131,7 @@ body {
 
 #You {
   justify-content: flex-start;
+  padding-left: 20px;
 }
 
 #Other {
@@ -134,20 +139,20 @@ body {
 }
 
 #Other .messageIndividual {
-  background-color: #75704e;
+  background-color: #f8d702;
   color: black;
 }
+
 .messageIndividual {
   width: 200px;
-  height: 60px;
+  height: auto;
   border-radius: 10px;
   display: grid;
   place-items: center;
-  background-color: #cacc90;
-  opacity: 0.9;
+  background-color: #51523c;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin-right: 10px;
+  margin-right: 0px;
   margin-top: 20px;
 }
 
@@ -160,7 +165,7 @@ body {
 
 @media only screen and (min-width: 900px) {
   .chatContainer {
-    width: 550px;
+    width: 600px;
     height: 400px;
   }
 }
