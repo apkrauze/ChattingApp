@@ -1,5 +1,7 @@
 # ChattingApp
 
+A chat app built with React, express, and socket io.
+
 If you want to check it out then clone this repo, go to the client side, run npm start.
 Afterwards head to the server and run node index.js
 
